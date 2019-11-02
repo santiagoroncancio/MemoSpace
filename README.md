@@ -1,5 +1,5 @@
-#MemoSpace
+# MemoSpace
 
-##project members
--Johan Leon
--Santiago Roncancio
+## project members
+- Johan Leon
+- Santiago Roncancio
