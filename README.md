@@ -12,4 +12,4 @@ The main objective of MemoSpace is for players to know about space and improve t
 - **Santiago Roncancio** - programmer - [ss2108](https://github.com/ss2108)
 
 ## License
-This project is under License GPL - see the [LICENSE.md](https://github.com/ss2108/MemoSpace/blob/master/LICENSE.md) file for details
+This project is under License Creative Commons - see the [LICENSE.md](https://github.com/ss2108/MemoSpace/blob/master/LICENSE.md) file for details
