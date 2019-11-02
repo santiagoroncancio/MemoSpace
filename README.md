@@ -1,5 +1,7 @@
 # MemoSpace
-Here is a paragraph that describes what the project is about.
+
+MonoSpace is a game based on the classic memorama game, which helps to exercise the brain, finding matching pairs of cards on the board until there is no card face down.
+The main objective of MemoSpace is for players to know about space and improve their cognitive abilities while having fun playing.
 
 ## Built with
 - [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432) - Code Editor
