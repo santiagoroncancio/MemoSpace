@@ -1,6 +1,6 @@
 # MemoSpace
 
-MonoSpace is a game based on the classic memorama game, which helps to exercise the brain, finding matching pairs of cards on the board until there is no card face down.
+MemoSpace is a game based on the classic memorama game, which helps to exercise the brain, finding matching pairs of cards on the board until there is no card face down.
 The main objective of MemoSpace is for players to know about space and improve their cognitive abilities while having fun playing.
 
 ## Built with
