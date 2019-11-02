@@ -9,7 +9,7 @@
     <header></header>
     <p>Hola Mundo!</p>
   <fieldset>
-      <legend>Ingrese dos numeros</legend>
+      <legend>Ingrese dos numeros que al sumarse de el numero 4</legend>
       <label for="">Numero 1:</label>
       <input type="text" id="txtN1">
       <br><br>
@@ -27,7 +27,11 @@
           var n1 = document.getElementById('txtN1').value;
           var n2 = document.getElementById('txtN2').value;
           var suma = parseInt(n1) + parseInt(n2);
+          var num1 = 4;
           alert("La suma es: "+suma)
+          if(suma==num1){
+            alert("gracias por hacer caso :3")
+          }
       }
   </script>
 </html>
