@@ -10,4 +10,4 @@ Here is a paragraph that describes what the project is about.
 - **Santiago Roncancio** - programmer - [ss2108]([https://github.com/ss2108](https://github.com/ss2108))
 
 ## License
-This project is under License (Your License) - see the (LICENSE.md)[https://github.com/ss2108/MemoSpace/blob/master/LICENSE.md] file for details
+This project is under License (Your License) - see the [LICENSE.md](https://github.com/ss2108/MemoSpace/blob/master/LICENSE.md) file for details
