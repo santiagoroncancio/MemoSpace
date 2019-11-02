@@ -6,7 +6,7 @@ Here is a paragraph that describes what the project is about.
 - [PyCharm]([https://www.jetbrains.com/pycharm/](https://www.jetbrains.com/pycharm/)) - IDE
 
 ## Authors
-- **Johan Leon** - programmer - [johanleon14]([https://github.com/johanleon14](https://github.com/johanleon14))
+- **Johan Leon** - programmer - [johanleon14]([https://github.com/johanleon14](https://github.com/johanleon14)) 
 - **Santiago Roncancio** - programmer - [ss2108]([https://github.com/ss2108](https://github.com/ss2108))
 
 ## License
