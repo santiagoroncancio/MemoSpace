@@ -8,8 +8,26 @@
   <body>
     <header></header>
     <p>Hola Mundo!</p>
-    <footer class="center">
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
-    </footer>
+  <fieldset>
+      <legend>Ingrese dos numeros</legend>
+      <label for="">Numero 1:</label>
+      <input type="text" id="txtN1">
+      <br><br>
+      <label for="">Numero 2:</label>
+      <input type="text" id="txtN2">
+      <br><br>
+      <input type="button" onclick="Sumar();" value="Calucular">
+  </fieldset>
+  <footer class="center">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+  </footer>
   </body>
+  <script>
+      function Sumar() {
+          var n1 = document.getElementById('txtN1').value;
+          var n2 = document.getElementById('txtN2').value;
+          var suma = parseInt(n1) + parseInt(n2);
+          alert("La suma es: "+suma)
+      }
+  </script>
 </html>
