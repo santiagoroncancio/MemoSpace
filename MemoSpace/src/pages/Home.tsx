@@ -10,7 +10,7 @@ const Home: React.FC = () => {
          
         </IonToolbar>
       </IonHeader>
-      <IonContent className="ion-padding" >
+      <IonContent className="ion-padding">
         The world is your oyster.
         <p>
           If you get lost, the{' '}
