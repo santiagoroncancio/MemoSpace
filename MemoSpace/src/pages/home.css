@@ -1,0 +1,11 @@
+.bg{
+    --background: none;
+    background-color: darkorange;
+    --background-image: url('/MemoSpace/public/assets/img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+  color: blue;  
+}
