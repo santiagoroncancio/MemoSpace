@@ -11,15 +11,9 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent className="bg">
         
-        <p>
-          No es mucho, pero es trabajo honesto
-          <br></br>
-          <br></br>
-          If you get lost, the{' '}
-          <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/">
-            docs
-          </a>{' '}
-          will be your guide
+        <p className="description">
+        MemoSpace is a memory game that helps the brain practice short-term memory. The goal of the game is to try to find equal cards in a series of cards with different figures in each of them,wich are even, that is each drawing is repeated
+        
         </p>
         <br></br>
         <br></br>
