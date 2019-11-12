@@ -1,4 +1,4 @@
-import { IonContent, IonHeader, IonPage, IonTitle } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonButton } from '@ionic/react';
 import React from 'react';
 import '../pages/home.css';
 
@@ -16,60 +16,13 @@ const Home: React.FC = () => {
         
         </p>
         <br></br>
+        <IonButton className="button">GUIDE</IonButton>
+        <IonButton className="button">EASY</IonButton>
         <br></br>
+        <IonButton className="button">MEDIUM</IonButton>
+        <IonButton className="button">HARD</IonButton>
         <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <IonButton className="button">SCORE</IonButton>
         <br></br>
 
       </IonContent>
