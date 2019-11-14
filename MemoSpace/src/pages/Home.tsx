@@ -6,7 +6,7 @@ import '../pages/home.css';
 const Home: React.FC = () => {
   return (
     <IonPage>
-      <IonHeader >
+      <IonHeader>
         <IonTitle className="title">MemoSpace</IonTitle>
       </IonHeader>
       <IonContent className="bg">
