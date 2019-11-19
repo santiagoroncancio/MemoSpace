@@ -5,7 +5,9 @@ The main objective of MemoSpace is for players to know about space and improve t
 
 ## Built with
 - [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432) - Code Editor
-- [PyCharm](https://www.jetbrains.com/pycharm/) - IDE
+- [NodeJs](https://nodejs.org/es/) - Runtime environment
+- [Ionic](https://ionicframework.com/) - SDK
+- [Cordova](https://cordova.apache.org/) - Development environment
 
 ## Authors
 - **Johan Leon** - programmer - [johanleon14](https://github.com/johanleon14)
