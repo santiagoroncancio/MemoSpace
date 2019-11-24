@@ -1,4 +1,5 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButton, IonLabel } from '@ionic/react';
+import {IonContent, IonHeader, IonPage, IonTitle, IonToolbar,IonButton, IonLabel } from '@ionic/react';
+
 import React from 'react';
 
 import './style.css';
@@ -19,6 +20,7 @@ const Home: React.FC = () => {
           different figures in each of them,wich are even, that is each drawing is repeated.
         </p>
       </IonLabel>
+
         <IonButton expand="block" color="danger" href="/guide">Guide</IonButton>
         <IonButton expand="block" color="danger" href="/Easy">Easy</IonButton>
         <IonButton expand="block" color="danger" href="/Medium">Medium</IonButton>

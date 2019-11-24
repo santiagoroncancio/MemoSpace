@@ -9,7 +9,7 @@ const Guide: React.FC = () => {
       <IonHeader>
         <IonToolbar className="center">
           <IonButtons slot="start">
-            <IonBackButton defaultHref="/" />
+            <IonBackButton defaultHref="/home" />
           </IonButtons>
           <IonTitle>Guide</IonTitle>
         </IonToolbar>
