@@ -1,5 +1,5 @@
 import React from 'react';
-import { IonHeader, IonToolbar, IonPage, IonTitle, IonContent,IonButtons,IonBackButton, IonFooter} from '@ionic/react';
+import {IonTabs,IonTabBar,IonTabButton,IonIcon, IonHeader, IonToolbar, IonPage, IonTitle, IonContent,IonButtons,IonBackButton, IonFooter} from '@ionic/react';
 
 import './style.css';
 
@@ -16,6 +16,17 @@ const Score: React.FC = () => {
       </IonHeader>
 
     <IonContent>
+    
+    <IonTabs>
+      <IonTabBar>
+        <IonTabButton tab="home" href="/home" >
+          {/* <IonIcon name="person" /> */}
+        </IonTabButton>
+        <IonTabButton  tab="home" href="/home">
+          {/* <IonIcon name="call" /> */}
+        </IonTabButton>
+      </IonTabBar>
+    </IonTabs>
 
 
     </IonContent>
