@@ -1,12 +1,12 @@
-ion-title{
-    font-size: 2em;
-}
 
 .texto{
-    padding: 0.5em 1em;
+    padding: 0.2em;
 }
 
 .center{
     text-align: center;
 }
 
+.slide{
+    display: block;
+}

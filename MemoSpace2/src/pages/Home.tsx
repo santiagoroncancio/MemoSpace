@@ -9,11 +9,12 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle className="center">MemoSpace</IonTitle>
+          <IonTitle className="center">Main Menu</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">
       <IonLabel>
+        <h1 className="center">MemoSpace</h1>
         <p className="center texto">
           MemoSpace is a memory game that helps the brain practice short-term memory. 
           The goal of the game is to try to find equal cards in a series of cards with 
@@ -21,11 +22,14 @@ const Home: React.FC = () => {
         </p>
       </IonLabel>
 
-        <IonButton expand="block" color="danger" href="/guide">Guide</IonButton>
-        <IonButton expand="block" color="danger" href="/Easy">Easy</IonButton>
-        <IonButton expand="block" color="danger" href="/Medium">Medium</IonButton>
-        <IonButton expand="block" color="danger" href="/Hard">Hard</IonButton>
-        <IonButton expand="block" color="danger" href="/Score">Score</IonButton>
+        <h2 className="center">Game mode</h2>
+        <IonButton size="large" expand="block" href="/Easy">Easy</IonButton>
+        <IonButton size="large" expand="block" href="/Medium">Medium</IonButton>
+        <IonButton size="large" expand="block" href="/Hard">Hard</IonButton>
+        <br/>
+        {/* <h2 className="center"></h2> */}
+        <IonButton size="large" expand="block" href="/guide">Guide</IonButton>
+        <IonButton size="large" expand="block" href="/Score">Score</IonButton>
 
       </IonContent>
     </IonPage>
