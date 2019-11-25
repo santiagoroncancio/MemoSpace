@@ -16,13 +16,13 @@ const Easy: React.FC = () => {
       </IonHeader>
 
     <IonContent>
-
+      
 
     </IonContent>
 
     <IonFooter>
       <IonToolbar>
-        <IonTitle className="center">Footer</IonTitle>
+        <IonTitle className="center">University of the Llanos</IonTitle>
       </IonToolbar>
     </IonFooter>
 
