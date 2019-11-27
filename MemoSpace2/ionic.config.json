@@ -1,5 +1,7 @@
 {
   "name": "MemoSpace2",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "react"
 }
