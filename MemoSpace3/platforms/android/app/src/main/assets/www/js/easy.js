@@ -1,4 +1,16 @@
-var array_memoria=['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','8'];
+if(navigator.onLine) {
+    var array_memoria=['https://cdn.eso.org/images/thumb700x/eso1322a.jpg','https://cdn.eso.org/images/thumb700x/eso1322a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1238a.jpg','https://cdn.eso.org/images/thumb700x/eso1238a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1625a.jpg','https://cdn.eso.org/images/thumb700x/eso1625a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1503a.jpg','https://cdn.eso.org/images/thumb700x/eso1503a.jpg',
+    'https://cdn.eso.org/images/thumb700x/potw1822a.jpg','https://cdn.eso.org/images/thumb700x/potw1822a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1237a.jpg','https://cdn.eso.org/images/thumb700x/eso1237a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1802a.jpg','https://cdn.eso.org/images/thumb700x/eso1802a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1733a.jpg','https://cdn.eso.org/images/thumb700x/eso1733a.jpg'];
+} else {
+    var array_memoria=['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','8'];
+}
+
     var valor_memoria=[];
     var memoria_carta_ids=[];
     var girada_carta=0;
@@ -13,20 +25,38 @@ var array_memoria=['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','
     }
 
     function nuevaTabla(){
+        movimientos=0;
         girada_carta = 0;
         var output = '';
         array_memoria.memoria_carta_barajar();
         for (var i = 0; i < array_memoria.length; i++) {
-           output += '<div id="carta_'+i+'" onclick="girarCartaMemoria(this,\''+array_memoria[i]+'\')"></div>';
+           output += '<div id="carta_'+i+'" onclick="girarCartaMemoria(this,\''+array_memoria[i]+'\')"></div>';       
         }
         document.getElementById('table_memoria').innerHTML=output;
+        init();
     }
 
+    var movimientos=0;
+
     function girarCartaMemoria(carta,valor){
+        
         if (carta.innerHTML == "" && valor_memoria.length < 2) {
-            carta.style.background = '#FFF'; // FONDO DE LA IMAGEN BOCA ARRIBA
-            carta.innerHTML = valor;
+            if(navigator.onLine) {
+                carta.innerHTML = " ";
+                carta.style.background = 'url("'+valor+'")'; // FONDO DE LA IMAGEN BOCA ARRIBA CON INTERNET
+                carta.style.backgroundSize='cover';
+            }else{
+                carta.innerHTML = valor;
+                carta.style.background = '#FFF'; // FONDO DE LA IMAGEN BOCA ARRIBA SIN INTERNET
+                carta.style.backgroundSize='cover';
+            }
+            
+            document.getElementById("movimientos").innerHTML =movimientos; 
             if(valor_memoria.length == 0){
+                movimientos=movimientos+1;
+                if(movimientos==1){ //INICIAR CRONOMETRO
+                    cronometrar();
+                }
                 valor_memoria.push(valor);
                 memoria_carta_ids.push(carta.id);
             } else if(valor_memoria.length == 1){
@@ -39,9 +69,15 @@ var array_memoria=['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','
                     memoria_carta_ids = [];
                     // checkea si la mesa entera esta despejada
                     if(girada_carta == array_memoria.length){
-                        alert("Juego Terminado");
-                        document.getElementById('table_memoria').innerHTML = "";
-                        nuevaTabla;
+                        parar();
+                        var opcion = confirm("Juego terminado en "+document.getElementById("hms").innerHTML+" con "+movimientos+" movimientos.  ¿Desea volver a jugar?");
+                            if (opcion == true) {
+                                document.getElementById('table_memoria').innerHTML = "";
+                                nuevaTabla();
+                            } else {
+                                location.href="index.html";
+                            }
+                        
                     }
                     
                 }else{
@@ -64,3 +100,44 @@ var array_memoria=['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','
             }
         }
     }
+
+
+
+
+
+
+   
+function init(){
+    document.getElementById("movimientos").innerHTML =movimientos; 
+    h = 0;
+    m = 0;
+    s = 0;
+    document.getElementById("hms").innerHTML="00:00:00";
+}         
+function cronometrar(){
+    escribir();
+    id = setInterval(escribir,1000);
+    
+}
+function escribir(){
+    var hAux, mAux, sAux;
+    s++;
+    if (s>59){m++;s=0;}
+    if (m>59){h++;m=0;}
+    if (h>24){h=0;}
+
+    if (s<10){sAux="0"+s;}else{sAux=s;}
+    if (m<10){mAux="0"+m;}else{mAux=m;}
+    if (h<10){hAux="0"+h;}else{hAux=h;}
+
+    document.getElementById("hms").innerHTML = hAux + ":" + mAux + ":" + sAux; 
+}
+function parar(){
+    clearInterval(id);
+
+}
+function reiniciar(){
+    clearInterval(id);
+    document.getElementById("hms").innerHTML="00:00:00";
+    h=0;m=0;s=0;
+}

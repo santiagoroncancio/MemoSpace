@@ -1,12 +1,25 @@
 if(navigator.onLine) {
-    var array_memoria=['https://cdn.eso.org/images/thumb700x/eso1322a.jpg','https://cdn.eso.org/images/thumb700x/eso1322a.jpg',
+    var array_memoria=[
     'https://cdn.eso.org/images/thumb700x/eso1238a.jpg','https://cdn.eso.org/images/thumb700x/eso1238a.jpg',
-    'https://cdn.eso.org/images/thumb700x/eso1625a.jpg','https://cdn.eso.org/images/thumb700x/eso1625a.jpg',
     'https://cdn.eso.org/images/thumb700x/eso1503a.jpg','https://cdn.eso.org/images/thumb700x/eso1503a.jpg',
     'https://cdn.eso.org/images/thumb700x/potw1822a.jpg','https://cdn.eso.org/images/thumb700x/potw1822a.jpg',
     'https://cdn.eso.org/images/thumb700x/eso1237a.jpg','https://cdn.eso.org/images/thumb700x/eso1237a.jpg',
     'https://cdn.eso.org/images/thumb700x/eso1802a.jpg','https://cdn.eso.org/images/thumb700x/eso1802a.jpg',
-    'https://cdn.eso.org/images/thumb700x/eso1733a.jpg','https://cdn.eso.org/images/thumb700x/eso1733a.jpg'];
+    'https://cdn.eso.org/images/thumb700x/eso1733a.jpg','https://cdn.eso.org/images/thumb700x/eso1733a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso0942a.jpg','https://cdn.eso.org/images/thumb700x/eso0942a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso0915a.jpg','https://cdn.eso.org/images/thumb700x/eso0915a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1310a.jpg','https://cdn.eso.org/images/thumb700x/eso1310a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1230a.jpg','https://cdn.eso.org/images/thumb700x/eso1230a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso0644a.jpg','https://cdn.eso.org/images/thumb700x/eso0644a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso0611a.jpg','https://cdn.eso.org/images/thumb700x/eso0611a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1919a.jpg','https://cdn.eso.org/images/thumb700x/eso1919a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1434a.jpg','https://cdn.eso.org/images/thumb700x/eso1434a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1245a.jpg','https://cdn.eso.org/images/thumb700x/eso1245a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso0908a.jpg','https://cdn.eso.org/images/thumb700x/eso0908a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1229a.jpg','https://cdn.eso.org/images/thumb700x/eso1229a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1907g.jpg','https://cdn.eso.org/images/thumb700x/eso1907g.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1028a.jpg','https://cdn.eso.org/images/thumb700x/eso1028a.jpg',
+    'https://cdn.eso.org/images/thumb700x/eso1907c.jpg','https://cdn.eso.org/images/thumb700x/eso1907c.jpg'];
 } else {
     var array_memoria=['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','8'];
 }
