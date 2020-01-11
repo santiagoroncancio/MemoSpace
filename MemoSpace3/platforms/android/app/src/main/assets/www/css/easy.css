@@ -20,6 +20,13 @@
   background-attachment: fixed;
   text-align: center;
   }
+  #winswf{
+    background-color: aquamarine;
+    position: absolute;
+    display: block;
+    top:35%;
+    margin-left: 40%;
+  }
 @media (orientation: landscape) { 
       div#table_memoria{
       background-color: transparent;
