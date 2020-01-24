@@ -6,8 +6,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>MemoSpace Easy</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script type="text/javascript" src="js/easy.js"></script>
     <link rel='stylesheet' type='text/css' media='screen' href='css/easy.css'>
+    <script type="text/javascript" src="js/easy.js"></script>
+    <script type="text/javascript" src="js/json.js"></script>
 
 
 </head>
@@ -20,8 +21,8 @@
     <div id="movimientos"></div>
     
     <div id="table_memoria"></div>
-    <div id='winban'><object id="EdgeID" type="text/html" width="250" height="250" data-dw-widget="Edge"
-        data="meteoros.html"></object>
+    <div id='winban'>
+        <object id="EdgeID" type="text/html" width="250" height="250" data-dw-widget="Edge"></object>
 
         <div class="sobre">
         <p id="winbantexto"></p>
@@ -31,7 +32,12 @@
                 location.href = "index.html";
             };
         </script>
-        <button id="again" class="boton" onclick="nuevaTabla()"></button>
+        <button id="again" class="boton" onclick="again"></button>
+        <script type="text/javascript">
+            document.getElementById("again").onclick = function () {
+                location.href = "Easy.html";
+            };
+        </script>
         <button id="cards" class="boton"></button>
         </div>
     </div>

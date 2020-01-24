@@ -3,7 +3,7 @@
 var p; // shortcut to reference prototypes
 var lib={};var ss={};var img={};
 lib.ssMetadata = [
-		{name:"meteoros_atlas_", frames: [[0,0,512,512],[0,514,512,512]]}
+		{name:"meteoros_atlas_", frames: [[0,514,512,512],[0,0,512,512]]}
 ];
 
 

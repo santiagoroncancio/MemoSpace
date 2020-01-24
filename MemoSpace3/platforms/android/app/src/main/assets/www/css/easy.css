@@ -94,7 +94,6 @@
     }
     #winban{
       position: absolute;
-      display: none;
       top:28%;
       margin-left: 30%;
       text-align: center;

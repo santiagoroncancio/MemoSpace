@@ -75,8 +75,7 @@ if(navigator.onLine) {
                     if(girada_carta == array_memoria.length){
                         parar();
                         document.getElementById("winban").style.display = "block";
-                        
-                        setTimeout(mensaje,4000);
+                        setTimeout(mensaje,500);
                     }
                     
                 }else{
@@ -104,15 +103,22 @@ if(navigator.onLine) {
 
 
 function mensaje(){
-    document.getElementById('winbantexto').innerHTML="Juego terminado en "+document.getElementById("hms").innerHTML+" con "+movimientos+" movimientos.  ¿Desea volver a jugar?";
     document.getElementById("winbantexto").style.visibility = "visible";
     document.getElementById("home").style.visibility = "visible";
     document.getElementById("again").style.visibility = "visible";
     document.getElementById("cards").style.visibility = "visible";
+    document.getElementById('winbantexto').innerHTML="Juego terminado en "+document.getElementById("hms").innerHTML+" con "+movimientos+" movimientos.  ¿Desea volver a jugar?";
 }
 
-   
+
+
 function init(){
+  
+    var count = Object.keys(json.tipos).length;
+    var ran=Math.floor(Math.random() * count); 
+    var seleccion=json.tipos[ran].ban;
+    
+    document.getElementById("EdgeID").data=seleccion;
     document.getElementById("winban").style.display = "none";
     document.getElementById("home").style.visibility = "hidden";
     document.getElementById("again").style.visibility = "hidden";
