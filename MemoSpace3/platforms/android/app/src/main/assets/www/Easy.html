@@ -20,7 +20,22 @@
     <div id="movimientos"></div>
     
     <div id="table_memoria"></div>
-    <div id="winswf"><img src="lul.swf"></div>
+    <div id='winban'><object id="EdgeID" type="text/html" width="250" height="250" data-dw-widget="Edge"
+        data="meteoros.html"></object>
+
+        <div class="sobre">
+        <p id="winbantexto"></p>
+        <button id="home" class="boton" onclick="home"></button>
+        <script type="text/javascript">
+            document.getElementById("home").onclick = function () {
+                location.href = "index.html";
+            };
+        </script>
+        <button id="again" class="boton" onclick="nuevaTabla()"></button>
+        <button id="cards" class="boton"></button>
+        </div>
+    </div>
+       
     <script>nuevaTabla();</script>
     
 

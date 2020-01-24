@@ -20,14 +20,37 @@
   background-attachment: fixed;
   text-align: center;
   }
-  #winswf{
-    background-color: aquamarine;
-    position: absolute;
-    display: none;
-    top:35%;
-    margin-left: 40%;
+ 
+  
+  #home{
+      background-color: rgba(0, 0, 0, 40%);
+      border-color: transparent;
+      background-image:url("../img/botones/home.png");
+      padding: 32px;
+      background-repeat: no-repeat;
+      border-radius: 10px 10px;
+    
   }
+  #again{
+    background-color: rgba(0, 0, 0, 40%);
+    border-color: transparent;
+    background-image:url("../img/botones/again.png");
+    padding: 32px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px;
+  
+}
+#cards{
+  background-color: rgba(0, 0, 0, 40%);
+  border-color: transparent;
+  background-image:url("../img/botones/cards.png");
+  padding: 32px;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px;
+
+}
 @media (orientation: landscape) { 
+
       div#table_memoria{
       background-color: transparent;
       border: transparent 1px solid;
@@ -69,7 +92,32 @@
       color:#fff;
       font-family: alarm;  
     }
+    #winban{
+      position: absolute;
+      display: none;
+      top:28%;
+      margin-left: 30%;
+      text-align: center;
+    }
+    #winbantexto{
+      position: absolute;
+      background-color: rgba(0, 0, 0, 40%);
+      top:10%;
+      width: 80%;
+      color: white;
+      text-shadow: 3px 3px blue;
+      font-size: 1.5em;
+    } 
+    .sobre{
+      margin-left: 10%;
+    }
+    .boton{
+      position: relative;
+      left:-5%;
+    }
+    
 }
+/* vertical */
 @media (orientation: portrait) { 
  
     div#table_memoria{
@@ -114,4 +162,28 @@
     color:#fff;
     font-family: alarm;  
   }
+  #winban{
+    position: absolute;
+    display: none;
+    top:31%;
+    width: 80%;
+    margin-left: 6%;
+  }
+  #winbantexto{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 40%);
+    top:10%;
+    width: 80%;
+    color: white;
+    text-shadow: 3px 3px blue;
+    font-size: 1.5em;
+  }
+  .sobre{
+    margin-left: 10%;
+  }
+  .boton{
+    position: relative;
+    left: -5%;
+  }
+  
 }

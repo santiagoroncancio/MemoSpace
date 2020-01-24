@@ -34,7 +34,11 @@ if(navigator.onLine) {
         }
         document.getElementById('table_memoria').innerHTML=output;
         init();
-    }
+        //BORRAR PLOX XD
+        //document.getElementById("winban").style.display = "block";
+        //mensaje();
+        //
+       }
 
     var movimientos=0;
 
@@ -70,14 +74,9 @@ if(navigator.onLine) {
                     // checkea si la mesa entera esta despejada
                     if(girada_carta == array_memoria.length){
                         parar();
-                        var opcion = confirm("Juego terminado en "+document.getElementById("hms").innerHTML+" con "+movimientos+" movimientos.  ¿Desea volver a jugar?");
-                            if (opcion == true) {
-                                document.getElementById('table_memoria').innerHTML = "";
-                                nuevaTabla();
-                            } else {
-                                location.href="index.html";
-                            }
+                        document.getElementById("winban").style.display = "block";
                         
+                        setTimeout(mensaje,4000);
                     }
                     
                 }else{
@@ -104,10 +103,21 @@ if(navigator.onLine) {
 
 
 
-
+function mensaje(){
+    document.getElementById('winbantexto').innerHTML="Juego terminado en "+document.getElementById("hms").innerHTML+" con "+movimientos+" movimientos.  ¿Desea volver a jugar?";
+    document.getElementById("winbantexto").style.visibility = "visible";
+    document.getElementById("home").style.visibility = "visible";
+    document.getElementById("again").style.visibility = "visible";
+    document.getElementById("cards").style.visibility = "visible";
+}
 
    
 function init(){
+    document.getElementById("winban").style.display = "none";
+    document.getElementById("home").style.visibility = "hidden";
+    document.getElementById("again").style.visibility = "hidden";
+    document.getElementById("cards").style.visibility = "hidden";
+    document.getElementById("winbantexto").style.visibility = "hidden";
     document.getElementById("movimientos").innerHTML =movimientos; 
     h = 0;
     m = 0;
