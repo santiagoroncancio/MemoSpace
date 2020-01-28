@@ -35,8 +35,8 @@ if(navigator.onLine) {
         document.getElementById('table_memoria').innerHTML=output;
         init();
         //BORRAR PLOX XD
-        //document.getElementById("winban").style.display = "block";
-        //mensaje();
+        document.getElementById("winban").style.display = "block";
+        mensaje();
         //
        }
 
@@ -75,7 +75,7 @@ if(navigator.onLine) {
                     if(girada_carta == array_memoria.length){
                         parar();
                         document.getElementById("winban").style.display = "block";
-                        setTimeout(mensaje,1000);
+                        setTimeout(mensaje,500);
                     }
                     
                 }else{
