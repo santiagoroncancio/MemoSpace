@@ -1,0 +1,110 @@
+.title{
+  /* background: black; */
+  color: white;
+  font-size: 2.4em;
+  background-size: cover;
+  text-align: center;
+  text-shadow: 3px 3px blue;
+  margin: 5px 0px;
+  }
+  
+  body {
+  background-image: url('../img/img/background.jpg') ;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size: 100% 99.99%;
+  background-position: center center;
+  background-attachment: fixed;
+  text-align: center;
+  }
+@media (orientation: landscape) { 
+      div#table_memoria{
+      background-color: transparent;
+      border: transparent 1px solid;
+      margin: 0px 8%;
+      padding-bottom: 45%;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(8,12.5%);
+      grid-template-rows: repeat(5,320%);
+      }
+      div#table_memoria > div{
+      background: url(../img/logo.png) no-repeat;
+      background-size: cover;
+      border: #000 1px solid;
+      margin: 0.5%;
+      padding: 1% 1%;
+      font-size: 64px;
+      cursor: pointer;
+      text-align: center;
+      
+      }
+    .cronometro{
+        width:50%;
+        margin: 0px;
+        display: inline-block;
+    } 
+    #hms{
+      margin: 0px;
+      font-size:1.5em;
+      color:#fff;
+      font-family:alarm;
+    }
+    #movimientos{
+      width: 36%;
+      margin: 0px;
+      display: inline-block;
+      text-align:center;
+      font-size:1.5em;
+      color:#fff;
+      font-family: alarm;  
+    }
+}
+@media (orientation: portrait) { 
+ 
+    div#table_memoria{
+      background-color: transparent;
+      border: transparent 1px solid;
+      margin: 0px 8%;
+      padding-bottom: 155%;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(5,20%);
+      grid-template-rows: repeat(8,260%);
+      clear: both;
+    }
+    div#table_memoria > div{
+      background: url(../img/logo.png) no-repeat;
+      background-size: cover;
+      border: #000 1px solid;
+      margin: 0.5%;
+      padding: 1% 1%;
+      font-size: 64px;
+      cursor: pointer;
+      text-align: center;
+    
+    }
+    .cronometro{
+      width:50%;
+      margin: 0px;
+      display: inline-block;
+  } 
+  #hms{
+    margin: 0px;
+    font-size:3em;
+    color:#fff;
+    font-family:alarm;
+  }
+  #movimientos{
+    width: 36%;
+    margin: 0px;
+    display: inline-block;
+    text-align:center;
+    font-size:3em;
+    color:#fff;
+    font-family: alarm;  
+  }
+}

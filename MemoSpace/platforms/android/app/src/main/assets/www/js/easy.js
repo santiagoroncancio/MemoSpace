@@ -1,4 +1,4 @@
-if(navigator.onLine) {
+
     var array_memoria=['https://cdn.eso.org/images/thumb700x/eso1322a.jpg','https://cdn.eso.org/images/thumb700x/eso1322a.jpg',
     'https://cdn.eso.org/images/thumb700x/eso1238a.jpg','https://cdn.eso.org/images/thumb700x/eso1238a.jpg',
     'https://cdn.eso.org/images/thumb700x/eso1625a.jpg','https://cdn.eso.org/images/thumb700x/eso1625a.jpg',
@@ -7,9 +7,7 @@ if(navigator.onLine) {
     'https://cdn.eso.org/images/thumb700x/eso1237a.jpg','https://cdn.eso.org/images/thumb700x/eso1237a.jpg',
     'https://cdn.eso.org/images/thumb700x/eso1802a.jpg','https://cdn.eso.org/images/thumb700x/eso1802a.jpg',
     'https://cdn.eso.org/images/thumb700x/eso1733a.jpg','https://cdn.eso.org/images/thumb700x/eso1733a.jpg'];
-} else {
-    var array_memoria=['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','8'];
-}
+
 
     var valor_memoria=[];
     var memoria_carta_ids=[];
@@ -45,15 +43,15 @@ if(navigator.onLine) {
     function girarCartaMemoria(carta,valor){
         
         if (carta.innerHTML == "" && valor_memoria.length < 2) {
-            if(navigator.onLine) {
-                carta.innerHTML = " ";
-                carta.style.background = 'url("'+valor+'")'; // FONDO DE LA IMAGEN BOCA ARRIBA CON INTERNET
-                carta.style.backgroundSize='cover';
-            }else{
-                carta.innerHTML = valor;
-                carta.style.background = '#FFF'; // FONDO DE LA IMAGEN BOCA ARRIBA SIN INTERNET
-                carta.style.backgroundSize='cover';
-            }
+            
+            carta.innerHTML = " ";
+            carta.style.background = 'url("'+valor+'")'; // FONDO DE LA IMAGEN BOCA ARRIBA CON INTERNET
+            carta.style.backgroundSize='cover';
+            
+            // carta.innerHTML = valor;
+            //carta.style.background = '#FFF'; // FONDO DE LA IMAGEN BOCA ARRIBA SIN INTERNET
+            //carta.style.backgroundSize='cover';
+            
             
             document.getElementById("movimientos").innerHTML =movimientos; 
             if(valor_memoria.length == 0){

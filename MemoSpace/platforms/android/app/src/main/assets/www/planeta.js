@@ -7,11 +7,6 @@ lib.ssMetadata = [
 		{name:"planeta_atlas_2", frames: [[0,861,626,626],[0,0,840,859]]}
 ];
 
-
-// symbols:
-
-
-
 (lib.estrella = function() {
 	this.initialize(ss["planeta_atlas_2"]);
 	this.gotoAndStop(0);
