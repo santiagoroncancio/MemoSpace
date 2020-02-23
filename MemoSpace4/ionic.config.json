@@ -1,7 +1,0 @@
-{
-  "name": "MemoSpace",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
