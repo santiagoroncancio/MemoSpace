@@ -2,25 +2,27 @@
 
 <html>
     <head>    
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta charset="UTF-8">
         <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
-        <link rel="stylesheet" type="text/css" href="css/home.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+    
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/styleIndex.css">
         <title>MemoSpace</title>
     </head>
-    <body style="overflow-y:hidden">
-       <section>
+    <body">
+        <div class="container">
             <h1 class="title">MemoSpace</h1>
-
-        <div class="center">
-        <a href="./Guide.html"><button class="button">GUIDE</button></a>
-        <a href="./Easy.html"><button class="button">EASY</button></a>
-        <a href="./Medium.html"><button class="button">MEDIUM</button></a>
-        <a href="./Hard.html"><button class="button">HARD</button></a>
-        <button class="button">SCORE</button>
-        </div>
-       </section>
+            <p class="description">
+                MemoSpace is a memory game that helps the brain practice short-term memory. 
+            </p>
+            <div class="butoon">
+                <a href="./Guide.html"><button type="button" class="btn btn-light btn-block">Guide</button></a>
+                <a href="./Easy.html"><button type="button" class="btn btn-light btn-block">Easy</button></a>
+                <a href="./Medium.html"><button type="button" class="btn btn-light btn-block">Medium</button></a>
+                <a href="./Hard.html"><button type="button" class="btn btn-light btn-block">Hard</button></a>
+                <a href="./Score.html"><button type="button" class="btn btn-light btn-block">Score</button></a>
+            </div>
+        </div>           
     </body>
 </html>
