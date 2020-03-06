@@ -15,15 +15,17 @@ cards_num = cards_num.sort(function () { return Math.random() - 0.5 });
 var array_memoria=[];
 rev();
 function rev() {
-    for (var i = 0; i < 16; i=i+2) {
-        
-        
-        array_memoria[i] = 'img/cards/' + cards_num[i/2] + '.jpg';
-        array_memoria[i+1] = 'img/cards/' + cards_num[i/2] + '.jpg';
-        
-        
+    if(navigator.onLine) {
+        // el navegador está conectado a la red
+    } else {
+        // el navegador NO está conectado a la red
+        for (var i = 0; i < 16; i=i+2) {
+            array_memoria[i] = 'img/cards/' + cards_num[i/2] + '.jpg';
+            array_memoria[i+1] = 'img/cards/' + cards_num[i/2] + '.jpg';
+        }
     }
-    alert(array_memoria);
+   
+    //alert(array_memoria);
 }
 var valor_memoria = [];
 var memoria_carta_ids = [];
@@ -49,7 +51,7 @@ function nuevaTabla() {
     }
     document.getElementById('table_memoria').innerHTML = output;
     init();
-    //BORRAR PLOX XD
+    //
     //document.getElementById("winban").style.display = "block";
     //mensaje();
     //
@@ -60,6 +62,7 @@ var movimientos = 0;
 function girarCartaMemoria(carta, valor) {
 
     if (carta.innerHTML == "" && valor_memoria.length < 2) {
+        
 
         carta.innerHTML = " ";
         //carta.style.background = 'url("' + valor + '")'; // FONDO DE LA IMAGEN BOCA ARRIBA CON INTERNET

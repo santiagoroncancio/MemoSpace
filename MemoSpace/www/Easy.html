@@ -14,7 +14,13 @@
 </head>
 
 <body>
-    <h1 class="title">MemoSpace - Easy</h1>
+    <div class="navbar">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./img/icon/back.png" width="30" height="30" alt="Return button">
+        </a>
+        <h1 class="title">Easy</h1>
+    </div>
+    
     <div class="cronometro">
         <div id="hms"></div>
     </div>
@@ -38,7 +44,12 @@
                 location.href = "Easy.html";
             };
         </script>
-        <button id="cards" class="boton"></button>
+        <button id="cards" class="boton"  onclick="cards"></button>
+        <script type="text/javascript">
+            document.getElementById("cards").onclick = function () {
+                location.href = "cards.html";
+            };
+        </script>
         </div>
     </div>
        

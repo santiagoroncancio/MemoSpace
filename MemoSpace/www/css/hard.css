@@ -9,7 +9,7 @@
   }
   
   body {
-  background-image: url('../img/img/background.jpg') ;
+  background-image: url('../img/img/space.jpg') ;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size:cover;
@@ -19,6 +19,15 @@
   background-position: center center;
   background-attachment: fixed;
   text-align: center;
+  }
+  .navbar{
+    background-color: black;
+    text-align: center;
+  }
+  .navbar-brand{
+    
+    float: left;
+    padding:2.5% 2%;
   }
 @media (orientation: landscape) { 
       div#table_memoria{
