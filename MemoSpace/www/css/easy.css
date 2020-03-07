@@ -24,11 +24,7 @@
     background-color: black;
     text-align: center;
   }
-  .navbar-brand{
-    
-    float: left;
-    padding:2.5% 2%;
-  }
+  
   
   #home{
       background-color: rgba(0, 0, 0, 40%);
@@ -58,6 +54,10 @@
 
 }
 @media (orientation: landscape) { 
+  .navbar-brand{
+    float: left;
+    padding: 1% 2%;
+  }
 
       div#table_memoria{
       background-color: transparent;
@@ -126,6 +126,10 @@
 }
 /* vertical */
 @media (orientation: portrait) { 
+  .navbar-brand{
+    float: left;
+    padding:1.6% 2%;
+  }
  
     div#table_memoria{
       background-color: transparent;

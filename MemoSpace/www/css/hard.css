@@ -25,9 +25,8 @@
     text-align: center;
   }
   .navbar-brand{
-    
     float: left;
-    padding:2.5% 2%;
+    padding:1.6% 2%;
   }
 @media (orientation: landscape) { 
       div#table_memoria{

@@ -12,19 +12,14 @@ var cards_num = ['1', '2', '3', '4', '5', '6', '7', '8'];
 
 cards_num = cards_num.sort(function () { return Math.random() - 0.5 });
 
-var array_memoria=[];
+var array_memoria = [];
 rev();
 function rev() {
-    if(navigator.onLine) {
-        // el navegador está conectado a la red
-    } else {
-        // el navegador NO está conectado a la red
-        for (var i = 0; i < 16; i=i+2) {
-            array_memoria[i] = 'img/cards/' + cards_num[i/2] + '.jpg';
-            array_memoria[i+1] = 'img/cards/' + cards_num[i/2] + '.jpg';
-        }
+
+    for (var i = 0; i < 16; i = i + 2) {
+        array_memoria[i] = 'img/cards/' + cards_num[i / 2] + '.jpg';
+        array_memoria[i + 1] = 'img/cards/' + cards_num[i / 2] + '.jpg';
     }
-   
     //alert(array_memoria);
 }
 var valor_memoria = [];
@@ -41,7 +36,7 @@ Array.prototype.memoria_carta_barajar = function () {
 }
 
 function nuevaTabla() {
-   
+
     movimientos = 0;
     girada_carta = 0;
     var output = '';
@@ -52,8 +47,8 @@ function nuevaTabla() {
     document.getElementById('table_memoria').innerHTML = output;
     init();
     //
-    //document.getElementById("winban").style.display = "block";
-    //mensaje();
+    document.getElementById("winban").style.display = "block";
+    mensaje();
     //
 }
 
@@ -62,7 +57,7 @@ var movimientos = 0;
 function girarCartaMemoria(carta, valor) {
 
     if (carta.innerHTML == "" && valor_memoria.length < 2) {
-        
+
 
         carta.innerHTML = " ";
         //carta.style.background = 'url("' + valor + '")'; // FONDO DE LA IMAGEN BOCA ARRIBA CON INTERNET
