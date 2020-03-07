@@ -201,3 +201,9 @@ footer p{
   }
   
 }
+#carta{
+  width: 40px;
+  height: 40px;
+  margin:10px;
+  padding:20px;
+}

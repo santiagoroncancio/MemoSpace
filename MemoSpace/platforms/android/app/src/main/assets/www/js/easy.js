@@ -1,24 +1,17 @@
 
-/*var array_memoria=['https://cdn.eso.org/images/thumb700x/eso1322a.jpg','https://cdn.eso.org/images/thumb700x/eso1322a.jpg',
-'https://cdn.eso.org/images/thumb700x/eso1238a.jpg','https://cdn.eso.org/images/thumb700x/eso1238a.jpg',
-'https://cdn.eso.org/images/thumb700x/eso1625a.jpg','https://cdn.eso.org/images/thumb700x/eso1625a.jpg',
-'https://cdn.eso.org/images/thumb700x/eso1503a.jpg','https://cdn.eso.org/images/thumb700x/eso1503a.jpg',
-'https://cdn.eso.org/images/thumb700x/potw1822a.jpg','https://cdn.eso.org/images/thumb700x/potw1822a.jpg',
-'https://cdn.eso.org/images/thumb700x/eso1237a.jpg','https://cdn.eso.org/images/thumb700x/eso1237a.jpg',
-'https://cdn.eso.org/images/thumb700x/eso1802a.jpg','https://cdn.eso.org/images/thumb700x/eso1802a.jpg',
-'https://cdn.eso.org/images/thumb700x/eso1733a.jpg','https://cdn.eso.org/images/thumb700x/eso1733a.jpg'];
-*/
-var cards_num = ['1', '2', '3', '4', '5', '6', '7', '8'];
+
+var cards_num = ['1', '2', '3', '4', '5', '6', '7', '8','9','10','11','12','13','14','15','16','17','18','19','20',
+                '21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40',
+                '41','42','43','44','45','46','47','48','49','50','51'];
 
 cards_num = cards_num.sort(function () { return Math.random() - 0.5 });
 
 var array_memoria = [];
 rev();
 function rev() {
-
     for (var i = 0; i < 16; i = i + 2) {
-        array_memoria[i] = 'img/cards/' + cards_num[i / 2] + '.jpg';
-        array_memoria[i + 1] = 'img/cards/' + cards_num[i / 2] + '.jpg';
+        array_memoria[i] = 'img/cards/' + cards_num[i] + '.jpg';
+        array_memoria[i + 1] = 'img/cards/' + cards_num[i] + '.jpg';
     }
     //alert(array_memoria);
 }
@@ -42,13 +35,13 @@ function nuevaTabla() {
     var output = '';
     array_memoria.memoria_carta_barajar();
     for (var i = 0; i < array_memoria.length; i++) {
-        output += '<div id="carta_' + i + '" onclick="girarCartaMemoria(this,\'' + array_memoria[i] + '\')"></div>';
+        output += '<div class="carta" id="carta_' + i + '" onclick="girarCartaMemoria(this,\'' + array_memoria[i] + '\')"></div>';
     }
     document.getElementById('table_memoria').innerHTML = output;
     init();
     //
-    document.getElementById("winban").style.display = "block";
-    mensaje();
+    //document.getElementById("winban").style.display = "block";
+    //mensaje();
     //
 }
 
@@ -60,13 +53,9 @@ function girarCartaMemoria(carta, valor) {
 
 
         carta.innerHTML = " ";
-        //carta.style.background = 'url("' + valor + '")'; // FONDO DE LA IMAGEN BOCA ARRIBA CON INTERNET
         carta.style.background = 'url("' + valor + '")'; // FONDO DE LA IMAGEN BOCA ARRIBA CON INTERNET
         carta.style.backgroundSize = 'cover';
 
-        // carta.innerHTML = valor;
-        //carta.style.background = '#FFF'; // FONDO DE LA IMAGEN BOCA ARRIBA SIN INTERNET
-        //carta.style.backgroundSize='cover';
 
 
         document.getElementById("movimientos").innerHTML = movimientos;
@@ -127,7 +116,7 @@ function mensaje() {
 
 
 function init() {
-
+    //SELECCIONAR ANIMACION GANADORA
     var count = Object.keys(json.tipos).length;
     var ran = Math.floor(Math.random() * count);
     var seleccion = json.tipos[ran].ban;
@@ -171,9 +160,11 @@ function reiniciar() {
     document.getElementById("hms").innerHTML = "00:00:00";
     h = 0; m = 0; s = 0;
 }
-
+// REDIRECCIONAR A LA GALERIA DE CARTAS
 function cards()
 {
+    
+    localStorage.setItem("tam", 16);
     localStorage.setItem("cards",cards_num);
     location.href = "Cards.html";
 }

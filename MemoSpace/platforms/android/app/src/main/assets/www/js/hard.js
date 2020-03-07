@@ -43,7 +43,7 @@ if(navigator.onLine) {
         var output = '';
         array_memoria.memoria_carta_barajar();
         for (var i = 0; i < array_memoria.length; i++) {
-           output += '<div id="carta_'+i+'" onclick="girarCartaMemoria(this,\''+array_memoria[i]+'\')"></div>';       
+           output += '<div class"carta" id="carta_'+i+'" onclick="girarCartaMemoria(this,\''+array_memoria[i]+'\')"></div>';       
         }
         document.getElementById('table_memoria').innerHTML=output;
         init();

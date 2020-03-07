@@ -12,6 +12,8 @@
 		background: radial-gradient(circle, rgba(69,74,201,0.8064516129032258) 0%, rgba(0,123,255,0.6129032258064516) 100%);
 			
 		border-radius: 10px 10px;
+		margin-left: 2.5px;
+		margin-right: 2.5px;
 		margin-bottom: 5px;
 		display:  inline-table;
 		border:1px solid #999;	
@@ -38,7 +40,7 @@
 		height: 90px;
 	}
 	.text{
-		width: 60%;
+		width: 70%;
 		margin-left: 30%;
 	}
 }

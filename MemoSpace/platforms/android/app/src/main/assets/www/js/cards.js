@@ -1,10 +1,11 @@
 var x=localStorage.getItem("cards");
+
+var x = x.split(",");
+var tam=localStorage.getItem("tam");
 //alert(x);
-
-
 function fillCards(){
     var output = '';
-    for (var i = 0; i < (x.length+1); i=i+2) {
+    for (var i = 0; i < tam; i=i+2) {
         
         var Name=jsonCards.info[x[i]-1].Name;
         var Id=jsonCards.info[x[i]-1].Id;

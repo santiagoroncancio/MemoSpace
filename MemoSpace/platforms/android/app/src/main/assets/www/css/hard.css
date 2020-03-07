@@ -80,8 +80,8 @@
       padding-bottom: 155%;
       text-align: center;
       display: grid;
-      grid-template-columns: repeat(5,20%);
-      grid-template-rows: repeat(8,260%);
+      grid-template-columns: repeat(4,25%);
+      grid-template-rows: repeat(10,150%);
       clear: both;
     }
     div#table_memoria > div{
@@ -115,4 +115,10 @@
     color:#fff;
     font-family: alarm;  
   }
+}
+#carta{
+  width: 40px;
+  height: 40px;
+  margin:10px;
+  padding:20px;
 }
