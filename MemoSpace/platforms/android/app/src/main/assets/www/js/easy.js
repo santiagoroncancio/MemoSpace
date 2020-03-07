@@ -171,3 +171,9 @@ function reiniciar() {
     document.getElementById("hms").innerHTML = "00:00:00";
     h = 0; m = 0; s = 0;
 }
+
+function cards()
+{
+    localStorage.setItem("cards",cards_num);
+    location.href = "Cards.html";
+}

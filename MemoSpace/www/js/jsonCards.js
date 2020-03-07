@@ -1,0 +1,67 @@
+var jsonCards={"info":[
+    {"Name":"IC 2944, IC 2948",
+     "Id":"eso1322a",
+     "Type":"Star Formation",
+     "Distance":"6500 light years",
+     "Constellation":"Centaurus",
+     "Category":"Nebulae",
+     "Link":"https://www.eso.org/public/images/eso1322a/"
+    },
+    {"Name":"NGC 2359",
+     "Id":"eso1238a",
+     "Type":"Wolf-Rayet",
+     "Distance":"15000 light years",
+     "Constellation":"Canis Major",
+     "Category":"Nebulae",
+     "Link":"https://www.eso.org/public/images/eso1238a/"
+    },
+    {"Name":"M 42, Messier 42, Orion Nebula",
+     "Id":"eso1625a",
+     "Type":"H II Region",
+     "Distance":"-",
+     "Constellation":"Orion",
+     "Category":"Nebulae",
+     "Link":"https://www.eso.org/public/images/eso1625a/"
+    },
+    {"Name":"CG4",
+     "Id":"eso1503a",
+     "Type":"Nebula",
+     "Distance":"1300 light years",
+     "Constellation":"Puppis",
+     "Category":"Nebulae",
+     "Link":"https://www.eso.org/public/images/eso1503a/"
+    },
+    {"Name":"NGC 5643",
+     "Id":"potw1822a",
+     "Type":"Seyfert",
+     "Distance":"55 million light years",
+     "Constellation":"Lupus",
+     "Category":"Galaxies",
+     "Link":"https://www.eso.org/public/images/potw1822a/"
+    },
+    {"Name":"Gum 1, Seagull Nebula, Sh 2-292",
+     "Id":"eso1237a",
+     "Type":"Star Formation",
+     "Distance":"3500 light years",
+     "Constellation":"Monoceros",
+     "Category":"Nebulae",
+     "Link":"https://www.eso.org/public/images/eso1237a/"
+    },
+    {"Name":"NGC 3201",
+     "Id":"eso1802a",
+     "Type":"Black Hole",
+     "Distance":"-",
+     "Constellation":"-",
+     "Category":"	Star Clusters",
+     "Link":"https://www.eso.org/public/images/eso1802a/"
+    },
+    {"Name":"GW170817, NGC 4993",
+     "Id":"eso1733a",
+     "Type":"Neutron Star",
+     "Distance":"-",
+     "Constellation":"-",
+     "Category":"	Illustrations, Stars",
+     "Link":"https://www.eso.org/public/images/eso1733a/"
+    }
+    
+]};

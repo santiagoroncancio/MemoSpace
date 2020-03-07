@@ -42,7 +42,10 @@
     padding: 32px;
     background-repeat: no-repeat;
     border-radius: 10px 10px;
-  
+}
+footer p{
+  color: white;
+  font-size: 120%;
 }
 #cards{
   background-color: rgba(0, 0, 0, 40%);
