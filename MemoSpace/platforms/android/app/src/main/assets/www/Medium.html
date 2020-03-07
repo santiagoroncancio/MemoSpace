@@ -6,9 +6,6 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <title>Medium</title>
-    <link rel="stylesheet" type="text/css" href="./css/styleIndex.css">
-    
-
     <link rel='stylesheet' type='text/css' media='screen' href='css/medium.css'>
     <script type="text/javascript" src="js/medium.js"></script>
     <script type="text/javascript" src="js/json.js"></script>
@@ -23,12 +20,40 @@
         </a>
         <h1 class="title">Medium</h1>
     </div>
+    
     <div class="cronometro">
         <div id="hms"></div>
     </div>
     <div id="movimientos"></div>
+    
     <div id="table_memoria"></div>
+    <div id='winban'>
+        <object id="EdgeID" type="text/html" width="250" height="250" data-dw-widget="Edge"></object>
+
+        <div class="sobre">
+        <p id="winbantexto"></p>
+        <button id="home" class="boton" onclick="home"></button>
+        <script type="text/javascript">
+            document.getElementById("home").onclick = function () {
+                location.href = "index.html";
+            };
+        </script>
+        <button id="again" class="boton" onclick="again"></button>
+        <script type="text/javascript">
+            document.getElementById("again").onclick = function () {
+                location.href = "Medium.html";
+            };
+        </script>
+        <button id="cards" class="boton"  onclick="cards();"></button>
+      
+        </div>
+    </div>
+       
     <script>nuevaTabla();</script>
+    <footer>
+        <p>Copyright ©Eso.org</p>
+    </footer>
+
 </body>
 
 </html>

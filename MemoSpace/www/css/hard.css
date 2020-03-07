@@ -43,10 +43,7 @@
   background-repeat: no-repeat;
   border-radius: 10px 10px;
 }
-footer p{
-color: white;
-font-size: 120%;
-}
+
 #cards{
 background-color: rgba(0, 0, 0, 40%);
 border-color: transparent;
@@ -131,6 +128,10 @@ border-radius: 10px 10px;
       position: relative;
       left:-5%;
     }
+    footer p{
+      color: white;
+      font-size: 120%;
+      }
 }
 @media (orientation: portrait) { 
     .navbar-brand{
@@ -203,4 +204,9 @@ border-radius: 10px 10px;
     position: relative;
     left: -5%;
   }
+  footer p{
+    color: white;
+    font-size: 120%;
+    margin-top: 20%;
+    }
 }

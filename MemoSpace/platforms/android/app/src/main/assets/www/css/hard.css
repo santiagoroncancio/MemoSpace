@@ -24,11 +24,47 @@
     background-color: black;
     text-align: center;
   }
-  .navbar-brand{
-    float: left;
-    padding:1.6% 2%;
-  }
+    
+  
+  #home{
+    background-color: rgba(0, 0, 0, 40%);
+    border-color: transparent;
+    background-image:url("../img/buttons/home.png");
+    padding: 32px;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px;
+  
+}
+#again{
+  background-color: rgba(0, 0, 0, 40%);
+  border-color: transparent;
+  background-image:url("../img/buttons/again.png");
+  padding: 32px;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px;
+}
+
+#cards{
+background-color: rgba(0, 0, 0, 40%);
+border-color: transparent;
+background-image:url("../img/buttons/cards.png");
+padding: 32px;
+background-repeat: no-repeat;
+border-radius: 10px 10px;
+
+}
+#carta{
+  width: 40px;
+  height: 40px;
+  margin:10px;
+  padding:20px;
+}
+ 
 @media (orientation: landscape) { 
+      .navbar-brand{
+        float: left;
+        padding: 1% 2%;
+      }
       div#table_memoria{
       background-color: transparent;
       border: transparent 1px solid;
@@ -70,9 +106,39 @@
       color:#fff;
       font-family: alarm;  
     }
+    #winban{
+      position: absolute;
+      top:28%;
+      margin-left: 30%;
+      text-align: center;
+    }
+    #winbantexto{
+      position: absolute;
+      background-color: rgba(0, 0, 0, 40%);
+      top:10%;
+      width: 80%;
+      color: white;
+      text-shadow: 3px 3px blue;
+      font-size: 1.5em;
+    } 
+    .sobre{
+      margin-left: 10%;
+    }
+    .boton{
+      position: relative;
+      left:-5%;
+    }
+    footer p{
+      color: white;
+      font-size: 120%;
+      }
 }
 @media (orientation: portrait) { 
- 
+    .navbar-brand{
+      float: left;
+      padding:1.6% 2%;
+    }
+  
     div#table_memoria{
       background-color: transparent;
       border: transparent 1px solid;
@@ -115,10 +181,32 @@
     color:#fff;
     font-family: alarm;  
   }
-}
-#carta{
-  width: 40px;
-  height: 40px;
-  margin:10px;
-  padding:20px;
+  #winban{
+    position: absolute;
+    display: none;
+    top:31%;
+    width: 80%;
+    margin-left: 6%;
+  }
+  #winbantexto{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 40%);
+    top:10%;
+    width: 80%;
+    color: white;
+    text-shadow: 3px 3px blue;
+    font-size: 1.5em;
+  }
+  .sobre{
+    margin-left: 10%;
+  }
+  .boton{
+    position: relative;
+    left: -5%;
+  }
+  footer p{
+    color: white;
+    font-size: 120%;
+    margin-top: 20%;
+    }
 }
