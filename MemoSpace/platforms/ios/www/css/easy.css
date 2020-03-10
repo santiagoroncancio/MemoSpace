@@ -9,7 +9,7 @@
   }
   
   body {
-  background-image: url('../img/img/background.jpg') ;
+  background-image: url('../img/img/space.jpg') ;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size:cover;
@@ -19,13 +19,18 @@
   background-position: center center;
   background-attachment: fixed;
   text-align: center;
+  background-color: black;
   }
- 
+  .navbar{
+    background-color: black;
+    text-align: center;
+  }
+  
   
   #home{
       background-color: rgba(0, 0, 0, 40%);
       border-color: transparent;
-      background-image:url("../img/botones/home.png");
+      background-image:url("../img/buttons/home.png");
       padding: 32px;
       background-repeat: no-repeat;
       border-radius: 10px 10px;
@@ -34,22 +39,35 @@
   #again{
     background-color: rgba(0, 0, 0, 40%);
     border-color: transparent;
-    background-image:url("../img/botones/again.png");
+    background-image:url("../img/buttons/again.png");
     padding: 32px;
     background-repeat: no-repeat;
     border-radius: 10px 10px;
-  
+}
+footer p{
+  color: white;
+  font-size: 120%;
 }
 #cards{
   background-color: rgba(0, 0, 0, 40%);
   border-color: transparent;
-  background-image:url("../img/botones/cards.png");
+  background-image:url("../img/buttons/cards.png");
   padding: 32px;
   background-repeat: no-repeat;
   border-radius: 10px 10px;
 
 }
+#carta{
+  width: 40px;
+  height: 40px;
+  margin:10px;
+  padding:20px;
+}
 @media (orientation: landscape) { 
+  .navbar-brand{
+    float: left;
+    padding: 1% 2%;
+  }
 
       div#table_memoria{
       background-color: transparent;
@@ -118,6 +136,10 @@
 }
 /* vertical */
 @media (orientation: portrait) { 
+  .navbar-brand{
+    float: left;
+    padding:1.6% 2%;
+  }
  
     div#table_memoria{
       background-color: transparent;
