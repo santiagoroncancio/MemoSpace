@@ -11,6 +11,7 @@
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <icon src="www/img/icon.png" platform="android" width="57" height="57" density="mdpi" />
+    <icon src="www/img/icon.png" platform="ios" width="57" height="57" density="mdpi" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
