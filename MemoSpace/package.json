@@ -10,8 +10,8 @@
   "keywords": [
     "ecosystem:cordova"
   ],
-  "author": "Apache Cordova Team",
-  "license": "Apache-2.0",
+  "author": "Johan Leon - programmer - johanleon14 Santiago Roncancio - programmer - ss2108",
+  "license": "Apache-2.0 - Creative Commons",
   "dependencies": {
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
