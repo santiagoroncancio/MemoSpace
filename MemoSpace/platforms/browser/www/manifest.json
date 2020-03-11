@@ -10,6 +10,16 @@
     {
       "src": "www/img/icon.png",
       "type": "image/png",
+      "sizes": "undefinedxundefined"
+    },
+    {
+      "src": "www/img/icon.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "www/img/icon.png",
+      "type": "image/png",
       "sizes": "57x57"
     }
   ],
