@@ -29,6 +29,7 @@
     <content src="index.html" />
     <access origin="*" />
     <icon density="mdpi" height="57" platform="android" src="www/img/icon.png" width="57" />
+    <icon density="mdpi" height="57" platform="ios" src="www/img/icon.png" width="57" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />

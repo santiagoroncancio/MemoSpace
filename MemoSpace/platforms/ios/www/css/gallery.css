@@ -1,16 +1,16 @@
-.title{
+.titleG{
     /* background: black; */
-    color: black;
+    color: white;
     font-size: 2.4em;
     background-size: cover;
     text-align: center;
-    text-shadow: 3px 3px red;
-    margin: 5px 0px;
+    text-shadow: 3px 3px blue;
+    margin-right: 10%;
     }
     
     .navbar{
-      text-align: center;
-      box-sizing: inherit;
+        background-color: black;
+        text-align: center;
     }
 
 *{
@@ -19,10 +19,7 @@
     box-sizing: border-box;
 }
 
-.line{
-    border-top: 5px solid rgb(204, 40, 40);
-    margin-bottom: 40px;
-}
+
 
 .container-image{
     display:flex;
@@ -58,38 +55,64 @@
     transition: .5s ease;
 }
 
-.overlay h2{
-    color: #fff;
-    font-weight: 300;
-    font-size:20px;
-    position: absolute;
-    top: 50%;
-    left:50%;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
+
 
 .image:hover .overlay{
     height:100%;
     cursor: pointer;
 }
-
-@media screen and (max-width:1000px){
+footer{
+    margin-top: 2%;
+}
+footer p{
+    color: white;
+    font-size: 120%;
+  }
+/*         HORIZONTAL              */
+@media (orientation: landscape) { 
+    .overlay h2{
+        color: #fff;
+        font-size:60%;
+        font-weight: 100%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    .line{
+        border-top: 5px solid rgb(204, 40, 40);
+        margin-bottom: 2%;
+    }
     .container-image{
         width: 95%;
+        
+    }
+    .container-image .image{
+        width: 20%;
+        height: 150px;
+        border: white 1px solid;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0px 0px 8px blue;
     }
 }
 
-@media screen and (max-width:700px){
-    .container-image{
-        width: 90%;
+/*         VERTICAL              */
+@media (orientation: portrait) {
+    .overlay h2{
+        color: #fff;
+        font-weight: 50%;
+        font-size:80%;
+        position: absolute;
+        top: 50%;
+        left:50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
     }
-    .container-image{
-        width: 48%;
+    .line{
+        border-top: 5px solid rgb(204, 40, 40);
+        margin-bottom: 4%;
     }
-}
-
-@media screen and (max-width:450px){
     h1{
         font-size:22px;
     }
@@ -97,6 +120,10 @@
         width: 98%;
     }
     .container-image .image{
-        width: 80%;
+        width: 50%;
+        height: 150px;
+        border: white 1px solid;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0px 0px 8px blue;
     }
 }
