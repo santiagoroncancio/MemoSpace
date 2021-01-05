@@ -13,7 +13,7 @@
   "author": "Johan Leon - programmer - johanleon14 Santiago Roncancio - programmer - ss2108",
   "license": "Apache-2.0 - Creative Commons",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "cheerio": "^1.0.0-rc.3",
     "cordova-android": "^8.1.0",
     "cordova-ios": "^5.1.1"
